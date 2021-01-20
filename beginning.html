@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="interactive, narration, HIV, prevention, UNAIDS">
+    <meta name="description" content="An HIV prevention interactive narration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amani, my friend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appear.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="header_content">
+               <div><img src="img/signal.svg"/> 4G</div> <p>11:01</p><img src="img/battery.svg"/>
+            </div>
+            <div class="header_content">
+                <img s/><h1>AMANI BFF 💛️</h1><img/>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- player box -->
+            <div class="text_message player_box delay_1s">
+                <p>Amani ,uko wapi wewe?!</p>
+                <p class="time">08:48am</p>
+            </div>
+
+            <div class="text_message player_box delay_3s">
+                <p>I hope you didn't forget about our meeting with the investor at 9am right ?</p>
+                <p class="time">08:48am</p>
+            </div>
+
+            <div class="text_message player_box delay_7s">
+                <p> I'm waiting for you.</p>
+                <p class="time">08:48am</p>
+            </div>
+
+             <!-- choice box -->
+             <div class="text_message choice_box delay_8s" id="choice_box1">
+                <div class="choice">
+                    <a href="#impatient" class="toggle">Impatient</a>
+                </div>
+                <div class="choice">
+                    <a href="#worried" class="toggle">Worried</a>
+                </div>
+            </div>
+
+             <!-- player box -->
+             <div class="toggle-content appear" id="impatient">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Please tell me you’re on your way! You know how important this is!</p>
+                    <p class="time">08:49am</p>
+                </div> 
+                <div class="text_message player_box delay_3s">
+                    <p>Don’t you dare stand me up girl! 😭</p>
+                    <p class="time">08:49am</p>
+                </div> 
+             </div>
+
+            <div class="text_message player_box toggle-content appear delay_0_5s" id="worried">
+                <p>Are you ok? I'm worried. Please answer. 😔</p>
+                <p class="time">08:49am</p>
+            </div> 
+
+            
+            <div class="next appear" id="next1">
+                
+                <!-- amani box -->
+                <div class="text_message amani_box delay_4s">
+                    <p>Oh no!! Sorrryyyyyyyy sis!!! I completely forgot! 😱</p>
+                    <p class="time">08:50am</p>
+                </div>
+            
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_5s" id="choice_box2">
+                    <div class="choice">
+                        <a href="#outraged" class="toggle2">Outraged</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#surprised" class="toggle2">Surprised</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-content appear" id="outraged">
+                <!-- player box -->
+                <div class="text_message player_box delay_0_5s">
+                    <p>What’s WRONG with you?! </p>
+                    <p class="time">08:51am</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>Did you get hit on the head and suddenly got amnesia ?!!!</p>
+                    <p class="time">08:51am</p>
+                </div> 
+                <div class="text_message player_box delay_5s">
+                    <p>You better be in a hospital and forgot everything else as well. 😡</p>
+                    <p class="time">08:51am</p>
+                </div> 
+            </div>
+            <div class="toggle-content appear" id="surprised">
+                <div class="text_message player_box delay_0_5s">
+                    <p>How is that even POSSIBLE?</p>
+                    <p class="time">08:51am</p>
+                </div>
+                <div class="text_message player_box delay_3s">
+                    <p>We have planned this ages ago!</p>
+                    <p class="time">08:51am</p>
+                </div>
+            </div>
+            <div class="next appear" id="next2">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_6s">
+                    <p>I’m really really sorry… 😔😭 </p>
+                    <p class="time">08:52am</p>
+                </div>
+
+                <div class="text_message amani_box delay_10s">
+                    <p>I had to help mom to make Pilau. You know how my father gets if I don’t do it with her. 🙄</p>
+                    <p class="time">08:52am</p>
+                </div>
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_11s" id="choice_box3">
+                    <div class="choice">
+                        <a href="#upset" class="toggle3">Upset</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#confused" class="toggle3">Confused</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="toggle-content appear" id="upset">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Womanz ebu wacha kunidanganya. </p>
+                    <p class="time">08:52am</p>
+                </div> 
+                <div class="text_message player_box delay_4s">
+                    <p>I know you make Pilau on Sundays and today is Saturday!</p>
+                    <p class="time">08:52am</p>
+                </div> 
+            </div>
+            <!-- player box -->
+            <div class="toggle-content appear" id="confused">
+                <div class="text_message player_box delay_0_5s">
+                    <p>But why? ☹️ You only make Pilau on Sundays.</p>
+                    <p class="time">08:52am</p>
+                </div>
+                <div class="text_message player_box delay_4s">
+                    <p>Did something happen?</p>
+                    <p class="time">08:52am</p>
+                </div>
+            </div>
+
+            <div class="next appear" id="next3">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_8s">
+                    <p>Ok ok you got me. I’m on my way to Azaan’s place 🙈</p>
+                    <p class="time">08:52am</p>
+                </div>
+
+                <div class="text_message choice_box delay_9s" id="choice_box4">
+                    <div class="choice">
+                        <a href="#outraged2" class="toggle4">Outraged</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#disappointed" class="faded">Disappointed</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="text_message player_box toggle-content appear delay_0_5s" id="outraged2">
+                <p>What?!!!</p>
+                <p class="time">08:53am</p>
+            </div> 
+
+            <div class="next appear" id="next4">
+                <!-- player box -->
+                <div class="text_message player_box delay_3s">
+                    <p>Can’t you stop thinking about that for a second?</p>
+                    <p class="time">08:53am</p>
+                </div> 
+                <div class="text_message player_box delay_6s">
+                    <p>Some things are more important</p>
+                    <p class="time">08:53am</p>
+                </div> 
+                <div class="text_message player_box delay_9s">
+                    <p>Like being HERE with ME now. 😒😤</p>
+                    <p class="time">08:53am</p>
+                </div> 
+                <!-- amani box -->
+                <div class="text_message amani_box delay_12s">
+                    <p>Im sorry girl.usijam Aki.</p>
+                    <p class="time">08:54am</p>
+                </div>
+
+                <div class="text_message amani_box delay_15s">
+                    <p>I promise I’ll make it up to you! 🙏🏾</p>
+                    <p class="time">08:54am</p>
+                </div>
+
+                <div class="text_message amani_box delay_19s">
+                    <p>I just needed some time with him.</p>
+                    <p class="time">08:55am</p>
+                </div>
+
+                 <!-- narrator box -->
+                <div class="text_message narrator_box delay_20s">
+                    <p>---- You give no answer ----</p>
+                </div>
+                <div class="text_message narrator_box delay_22s">
+                    <p>---- Two hours passed ----</p>
+                </div>
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_24s">
+                    <p>Dear, you there?</p>
+                    <p class="time">11:02am</p>
+                </div>
+                <div class="text_message amani_box delay_27s">
+                    <p>I know you are mad but I really need you! 😢</p>
+                    <p class="time">11:02am</p>
+                </div>
+
+                <!-- player box -->
+                <div class="text_message player_box delay_31s">
+                    <p>Ni nini? 🙄</p>
+                    <p class="time">11:04am</p>
+                </div> 
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_34s">
+                    <p>I have something to tell you.</p>
+                    <p class="time">11:04am</p>
+                </div>
+                <div class="text_message amani_box delay_37s">
+                    <p>But... Promise me you wont get all judgy with me! 😬🙈</p>
+                    <p class="time">11:05am</p>
+                </div>
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_38s" id="choice_box5">
+                    <div class="choice">
+                        <a href="#rejecting" class="toggle5">Rejecting</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#reassuring" class="toggle5 faded">Reassuring</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="text_message player_box toggle-content appear delay_0_5s" id="rejecting">
+                <p>Hizo story zako na Azaam sitaki kuskia</p>
+                <p class="time">11:05am</p>
+            </div> 
+
+            <div class="next appear" id="next5">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_4s">
+                    <p>Ok I understand if you don’t want to talk to me. I deserve it.</p>
+                    <p class="time">11:05am</p>
+                </div> 
+
+                 <!-- narrator box -->
+                 <div class="text_message narrator_box delay_6s">
+                    <p>---- A week passes ----</p>
+                </div>
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_7s" id="choice_box6">
+                    <div class="choice">
+                        <a href="#notext" class="toggle6">Don't text Amani</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#text" class="toggle6">Text Amani</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-content appear" id="notext">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_0_5s">
+                    <p>Please dear… it's been a week since we last talked to each other.</p>
+                    <p class="time">4:21pm</p>
+                </div>
+
+                <div class="text_message amani_box delay_4s">
+                    <p>I really need my best friend right now…</p>
+                    <p class="time">4:21pm</p>
+                </div>
+                <div class="text_message amani_box delay_8s">
+                    <p>Forgive me…</p>
+                    <p class="time">4:22pm</p>
+                </div>
+
+                <!-- player box -->
+                <div class="text_message player_box delay_12s">
+                    <p>🙄 Ok. Just remember this pia mimi nikiblanda.</p>
+                    <p class="time">4:23pm</p>
+                </div>
+                <div class="text_message player_box delay_19s">
+                    <p>Whats up?</p>
+                    <p class="time">4:23pm</p>
+                </div>
+            </div>
+
+            <div class="toggle-content appear" id="text">
+                <!-- player box -->
+                <div class="text_message player_box delay_0_5s">
+                    <p>So... how are you?</p>
+                    <p class="time">4:21pm</p>
+                </div>
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_4s">
+                    <p>Hey sis, so glad to hear from you. 😻😍</p>
+                    <p class="time">4:21pm</p>
+                </div>
+                <div class="text_message amani_box delay_8s">
+                    <p>Can we put everything past us? 🙏🏾</p>
+                    <p class="time">4:21pm</p>
+                </div>
+                <div class="text_message amani_box delay_12s">
+                    <p>I really missed you and your wise advice. </p>
+                    <p class="time">4:22pm</p>
+                </div>
+
+                <!-- player box -->
+                <div class="text_message player_box delay_14s">
+                    <p>🙄 Ok. Just remember this pia mimi nikiwa kwa ngori.</p>
+                    <p class="time">4:23pm</p>
+                </div>
+                <div class="text_message player_box delay_20s">
+                    <p>Whats up?</p>
+                    <p class="time">4:23pm</p>
+                </div>
+            </div>
+
+            <div class="next appear" id="next6">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_24s">
+                    <p>Well, guess what… I am a woman now! 😎</p>
+                    <p class="time">4:23pm</p>
+                </div>
+                <div class="text_message amani_box delay_28s">
+                    <p>Even though I don’t feel so different.😂😂😂</p>
+                    <p class="time">4:23pm</p>
+                </div>
+                <div class="text_message amani_box delay_31s">
+                    <p>Me and Azaan had sex last time…</p>
+                    <p class="time">4:23pm</p>
+                </div>
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_32s" id="choice_box7">
+                    <div class="choice">
+                        <a href="#gossipy" class="toggle7">Gossipy</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#caring" class="toggle7">Caring</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="toggle-content appear" id="gossipy">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Ati! How was it!</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>Was it romantic?</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_4s">
+                    <p>Or savage? </p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_6s">
+                    <p>Tell me more! </p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_8s">
+                    <p>How did Azaan’s nini look like? haha!</p>
+                    <p class="time">4:24pm</p>
+                </div>
+                <div class="text_message player_box delay_10s">
+                    <p>Was it big?</p>
+                    <p class="time">4:25pm</p>
+                </div>
+                <div class="text_message player_box delay_12s">
+                    <p>Was it tiny? 😂</p>
+                    <p class="time">4:25pm</p>
+                </div>
+            </div>
+
+            <div class="toggle-content appear" id="caring">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Oh Amani</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>I’m sorry I wasn’t there for you.</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_5s">
+                    <p>How do you feel about it ?</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_7s">
+                    <p>Did you enjoy it?</p>
+                    <p class="time">4:24pm</p>
+                </div> 
+                <div class="text_message player_box delay_11s">
+                    <p>Was it what you were expecting?</p>
+                    <p class="time">4:24pm</p>
+                </div>
+            </div>
+
+            <div class="next appear" id="next7">
+                <!-- amani box -->
+                <div class="text_message amani_box delay_14s">
+                    <p>I think it went well!</p>
+                    <p class="time">4:25pm</p>
+                </div> 
+                <div class="text_message amani_box delay_16s">
+                    <p>A little painful at the beginning because he is BIG but then it was… interesting 😂</p>
+                    <p class="time">4:25pm</p>
+                </div> 
+                <div class="text_message amani_box delay_20s">
+                    <p>I was expecting it to be like in movies but I guess it was a little bit awkward and bumpy. I guess it will get better with time.🤷🏾‍♀️🤭</p>
+                    <p class="time">4:25pm</p>
+                </div> 
+                <div class="text_message amani_box delay_24s">
+                    <p>I hope Azaan enjoyed it since this wasn’t his first time...</p>
+                    <p class="time">4:25pm</p>
+                </div> 
+                
+                <!-- choice box -->
+                <div class="text_message choice_box delay_25s" id="choice_box8">
+                    <div class="choice">
+                        <a href="#safety" class="toggle8">Ask about safety</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#nosafety" class="toggle8">Do not ask about safety</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- beginning of ask about safety subpath -->
+
+            <div class="toggle-content appear" id="safety">
+                <!-- player box -->
+                <div class="text_message player_box delay_0_5s">
+                    <p>Haha yes, you need to give it time in order to get to know your bodies and get comfortable. Movies are just movies. 😅</p>
+                    <p class="time">4:26pm</p>
+                </div> 
+                <div class="text_message player_box delay_4s">
+                    <p>Did you guys use a condom?</p>
+                    <p class="time">4:26pm</p>
+                </div> 
+                <!-- amani box -->
+                <div class="text_message amani_box delay_6s">
+                    <p>A condom? No, Azaan doesn’t like them, it’s too small for him. </p>
+                    <p class="time">4:27pm</p>
+                </div> 
+                <div class="text_message amani_box delay_10s">
+                    <p>And besides, we were careful and he pulled it out before he finished.</p>
+                    <p class="time">4:27pm</p>
+                </div> 
+
+                <!-- player box -->
+                <div class="text_message player_box delay_13s">
+                    <p>Waaah tricky coz condom inaeza hold litre kama 2 za maji so it will definitely fit. 💪🏾</p>
+                    <p class="time">4:27pm</p>
+                </div> 
+                <div class="text_message player_box delay_17s">
+                    <p>Pulling out is not enough. You need to protect yourself. 😬</p>
+                    <p class="time">4:27pm</p>
+                </div> 
+                <div class="text_message player_box delay_20s">
+                    <p>Let me explain to you.</p>
+                    <p class="time">4:27pm</p>
+                </div> 
+                <div class="text_message player_box delay_24s">
+                    <p> Imagine, your body is a spaceship. 🚀 </p>
+                    <p class="time">4:28pm</p>
+                </div> 
+                <div class="text_message player_box delay_27s">
+                    <p>It needs to defend itself against a lot of different things… </p>
+                    <p class="time">4:28pm</p>
+                </div> 
+                <div class="text_message player_box delay_30s">
+                    <p>One of them is sperm (to avoid getting pregnant). But there’s also viruses and bacteria that cause STI’s, and for that, we need some special shields! ⚔                    </p>
+                    <p class="time">4:28pm</p>
+                </div> 
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_32s">
+                    <p>Oh WOW! 😯😯😯</p>
+                    <p class="time">4:28pm</p>
+                </div> 
+
+                <!-- player box -->
+                <div class="text_message player_box delay_34s">
+                    <p>There are different kinds of them.</p>
+                    <p class="time">4:29pm</p>
+                </div> 
+                <div class="text_message player_box delay_37s">
+                    <p>The pill, the IUD, or the implants for example protect you only from pregnancy. 🛑✋🏾👶</p>
+                    <p class="time">4:29pm</p>
+                </div> 
+                <div class="text_message player_box delay_41s">
+                    <p>But the condom protects you from pregnancy AND STI’s. Double protection!😎👌🏾💯💯 </p>
+                    <p class="time">4:29pm</p>
+                </div> 
+                <div class="text_message player_box delay_45s">
+                    <p>So its always best to combine them to get double protection, and keep your spaceship EXTRA safe! ☔ </p>
+                    <p class="time">4:29pm</p>
+                </div> 
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_47s">
+                    <p>😂</p>
+                    <p class="time">4:30pm</p>
+                </div> 
+                <div class="text_message amani_box delay_49s">
+                    <p>You make this so much fun!! I’ll explode them till the last one 🔫 😈</p>
+                    <p class="time">4:30pm</p>
+                </div> 
+
+                <!-- choice box -->
+                <div class="text_message play_box1 delay_50s">
+                    <div class="choice">
+                        <a href="spaceship/gamefiles/index.html">Play Safeship</a>
+                    </div>
+                    <div class="choice">
+                        <a href="part2.html">Skip</a>
+                    </div>
+                </div>
+            </div> 
+            <!-- end of ask about safety subpath -->
+
+
+
+            <div class="toggle-content appear" id="nosafety">
+                <!-- player box -->
+                <div class="text_message player_box delay_0_5s">
+                    <p>Haha yes, movies are just movies. 🙄</p>
+                    <p class="time">4:26pm</p>
+                </div> 
+                <div class="text_message player_box delay_3s">
+                    <p>Maybe you’ll stop talking so much about it now and start thinking about our project!! 😶🤓</p>
+                    <p class="time">4:26pm</p>
+                </div> 
+                <!-- amani box -->
+                <div class="text_message amani_box delay_6s">
+                    <p>Ok ok! Stop lecturing me...</p>
+                    <p class="time">4:27pm</p>
+                </div> 
+                <div class="text_message amani_box delay_10s">
+                    <p>I’ll stop talking about it. </p>
+                    <p class="time">4:27pm</p>
+                </div> 
+
+                 <!-- narrator box -->
+                 <div class="text_message narrator_box delay_12s">
+                    <p>---- Several days pass ----</p>
+                </div>
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_14s">
+                    <p>I won’t come to school today again, I’m still sick 🤒</p>
+                    <p class="time">7:03am</p>
+                </div> 
+                <div class="text_message amani_box delay_17s">
+                    <p>Can you notify the teacher for me?</p>
+                    <p class="time">7:04am</p>
+                </div> 
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_18s" id="choice_box9">
+                    <div class="choice">
+                        <a href="#worried2" class="toggle9">Worried</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#sad" class="toggle9">Sad</a>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- player box -->
+            <div class="toggle-content appear" id="worried2">
+                <div class="text_message player_box delay_0_5s">
+                    <p>I'm getting worried.😟</p>
+                    <p class="time">07:05am</p>
+                </div>
+                <div class="text_message player_box delay_3s">
+                    <p> It’s been already 4 days you’ve missed school.</p>
+                    <p class="time">07:05am</p>
+                </div>
+            </div>
+
+            <div class="toggle-content appear" id="sad">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Are you ok?</p>
+                    <p class="time">07:05am</p>
+                </div>
+                <div class="text_message player_box delay_3s">
+                    <p>I’m tired of taking notes for you and I miss you! 😔</p>
+                    <p class="time">07:05am</p>
+                </div>
+            </div>
+
+            <div class="next appear" id="next9">
+                 <!-- amani box -->
+                 <div class="text_message amani_box delay_6s">
+                    <p>I’m fine, just a cold that won’t leave me alone!</p>
+                    <p class="time">7:05am</p>
+                </div> 
+                <div class="text_message amani_box delay_10s">
+                    <p>A cold in summer haha, how weak am I 😅 ?</p>
+                    <p class="time">7:06am</p>
+                </div> 
+
+                 <!-- choice box -->
+                <div class="text_message choice_box delay_11s" id="choice_box10">
+                    <div class="choice">
+                        <a href="#doubtful" class="toggle10">Doubtful</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#humourous" class="toggle10">Humourous</a>
+                    </div>
+                </div>
+            </div>
+
+                <!-- beggining of doubtful about cold subpath -->
+
+                <div class="toggle-content appear" id="doubtful">
+                    <!-- player box -->
+                    <div class="text_message player_box delay_0_5s">
+                        <p>Are you sure it’s just a cold? I’m just thinking...</p>
+                        <p class="time">7:06am</p>
+                    </div> 
+                    <div class="text_message player_box delay_4s">
+                        <p>Did you use a condom when you had sex with Azaan?</p>
+                        <p class="time">7:06am</p>
+                    </div> 
+
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_8s">
+                        <p>A condom? No, Azaan doesn’t like them. 😒 He says he likes to “feel everything” 🙄  </p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message amani_box delay_12s">
+                        <p>But anyways, What does that have to do with my cold? 😟😟</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <!-- player box -->
+                    <div class="text_message player_box delay_15s">
+                        <p>Oh dear</p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_17s">
+                        <p>Let me explain to you.</p>
+                        <p class="time">7:08amm</p>
+                    </div> 
+                    <div class="text_message player_box delay_20s">
+                        <p> Imagine, your body is a spaceship. 🚀 </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_24s">
+                        <p>It needs to defend itself against a lot of different things… </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_28s">
+                        <p>One of them is sperm (to avoid getting pregnant). But there’s also viruses and bacteria that cause STI’s, and for that, we need some special shields! ⚔                    </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+    
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_32s">
+                        <p>Oh WOW! 😯😯😯</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+    
+                    <!-- player box -->
+                    <div class="text_message player_box delay_35s">
+                        <p>There are different kinds of them.</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_39s">
+                        <p>The pill, the IUD, or the implants for example protect you only from pregnancy. 🛑✋🏾👶</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_44s">
+                        <p>But the condom protects you from pregnancy AND STI’s. Double protection!😎👌🏾💯💯 </p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_49s">
+                        <p>So its always best to combine them to get double protection, and keep your spaceship EXTRA safe! ☔ </p>
+                        <p class="time">7:09am</p>
+                    </div> 
+    
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_51s">
+                        <p>😂</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message amani_box delay_54s">
+                        <p>You make this so much fun!! I’ll explode them till the last one 🔫 😈</p>
+                        <p class="time">7:10am</p>
+                    </div> 
+
+                    <!-- choice box -->
+                    <div class="text_message play_box1 delay_55s">
+                        <div class="choice">
+                            <a href="spaceship/gamefiles/index.html">Play Safeship</a>
+                        </div>
+                        <div class="choice">
+                            <a href="part2.html">Skip</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of doubtful about cold subpath -->
+
+                <!-- beginning of humourous about cold subpath -->
+                <div class="toggle-content appear" id="humourous">
+                    <!-- player box -->
+                    <div class="text_message player_box delay_0_5s">
+                        <p>You’ve always been so weak haha</p>
+                        <p class="time">7:06am</p>
+                    </div> 
+                    <div class="text_message player_box delay_4s">
+                        <p>Thank God you wore a condom with Azaan or else I’d really be worried!</p>
+                        <p class="time">7:06am</p>
+                    </div> 
+
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_8s">
+                        <p>A condom? No, Azaan doesn’t like them. 😒 He says he likes to “feel everything” 🙄  </p>
+                        <p class="time">7:07am</p>
+                    </div> 
+
+                    <!-- player box -->
+                    <div class="text_message player_box delay_13s">
+                        <p>Dem hiyo ni ufala😑 Him and his bullshit once again.</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message player_box delay_17s">
+                        <p>Next time you make him wear one.</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message player_box delay_20s">
+                        <p> Tell him: “Sex with a condom is better than no sex at all, right?”</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message player_box delay_24s">
+                        <p>You’ll see how fast he puts one on ☝️</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_28s">
+                        <p>😂😂 I’ll definitely do that!</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message amani_box delay_32s">
+                        <p>We were careful to pull it out before he finished though…</p>
+                        <p class="time">7:07am</p>
+                    </div> 
+                    <div class="text_message amani_box delay_37s">
+                        <p>But anyways, What does that have to do with my cold? 😟😟</p>
+                        <p class="time">7:08am</p>
+                    </div> 
+
+                    <!-- player box -->
+                    <div class="text_message player_box delay_40s">
+                        <p>Oh dear</p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_42s">
+                        <p>Let me explain to you.</p>
+                        <p class="time">7:08amm</p>
+                    </div> 
+                    <div class="text_message player_box delay_46s">
+                        <p> Imagine, your body is a spaceship. 🚀 </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_50s">
+                        <p>It needs to defend itself against a lot of different things… </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+                    <div class="text_message player_box delay_54s">
+                        <p>One of them is sperm (to avoid getting pregnant). But there’s also viruses and bacteria that cause STI’s, and for that, we need some special shields! ⚔                    </p>
+                        <p class="time">7:08am</p>
+                    </div> 
+    
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_57s">
+                        <p>Oh WOW! 😯😯😯</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+    
+                    <!-- player box -->
+                    <div class="text_message player_box delay_59s">
+                        <p>There are different kinds of them.</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_62s">
+                        <p>The pill, the IUD, or the implants for example protect you only from pregnancy. 🛑✋🏾👶</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_66s">
+                        <p>But the condom protects you from pregnancy AND STI’s. Double protection!😎👌🏾💯💯 </p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message player_box delay_70s">
+                        <p>So its always best to combine them to get double protection, and keep your spaceship EXTRA safe! ☔ </p>
+                        <p class="time">7:09am</p>
+                    </div> 
+    
+                    <!-- amani box -->
+                    <div class="text_message amani_box delay_72s">
+                        <p>😂</p>
+                        <p class="time">7:09am</p>
+                    </div> 
+                    <div class="text_message amani_box delay_75s">
+                        <p>You make this so much fun!! I’ll explode them till the last one 🔫 😈</p>
+                        <p class="time">7:10am</p>
+                    </div> 
+
+                    <!-- choice box -->
+                    <div class="text_message play_box1 delay_76s">
+                        <div class="choice">
+                            <a href="spaceship/gamefiles/index.html">Play Safeship</a>
+                        </div>
+                        <div class="choice">
+                            <a href="part2.html">Skip</a>
+                        </div>
+                    </div>
+                </div>
+
+                       
+                
+                <!-- end of humourous about cold subpath -->
+            </div>
+            
+
+        <footer></footer>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="interactive, narration, HIV, prevention, UNAIDS">
+    <meta name="description" content="An HIV prevention interactive narration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amani, my friend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appear.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="header_content">
+               <div><img src="img/signal.svg"/> 4G</div> <p>11:01</p><img src="img/battery.svg"/>
+            </div>
+            <div class="header_content">
+                <img s/><h1>AMANI BFF 💛️</h1><img/>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- narrator box -->
+            <div class="text_message narrator_box delay_1s">
+                <p>---- A few days passes ----</p>
+            </div>
+            <!-- amani box -->
+            <div class="text_message amani_box delay_3s">
+                <p>Got the tests results this morning…😔</p>
+                <p class="time">10:58am</p>
+            </div>
+            
+            <!-- choice box -->
+            <div class="text_message choice_box delay_4s" id="choice_box1">
+                <div class="choice">
+                    <a href="#curious" class="toggle">Curious</a>
+                </div>
+                <div class="choice">
+                    <a href="#worried" class="toggle">Worried</a>
+                </div>
+            </div>
+
+            <!-- player box -->
+
+            <div class="text_message player_box toggle-content appear delay_0_5s" id="curious">
+                <p>Soooooooooo?</p>
+                <p class="time">10:59am</p>
+            </div> 
+            <div class="text_message player_box toggle-content appear delay_0_5s" id="worried">
+                <p>Is it bad????</p>
+                <p class="time">10:59am</p>
+            </div> 
+            
+ 
+            <div class="next appear" id="next1">
+                 <!-- amani box -->    
+                <div class="text_message amani_box delay_3s">
+                    <p>Im so worried I can’t even write.</p>
+                    <p class="time">10:59am</p>
+                </div> 
+                <div class="text_message amani_box delay_6s">
+                    <p>It says I’m positive for HIV.. Does it mean I have it?</p>
+                    <p class="time">11:00am</p>
+                </div> 
+                <div class="text_message amani_box delay_8s">
+                    <p>Or that the result is positive??</p>
+                    <p class="time">11:00am</p>
+                </div> 
+                <div class="text_message amani_box delay_11s">
+                    <p> I’m so confused… like, positive means good usually right ?</p>
+                    <p class="time">11:00am</p>
+                </div> 
+                <div class="text_message amani_box delay_14s">
+                    <p> Please tell me it’s good… I’m so scared right now. I feel I'm going to throw up. 🤢</p>
+                    <p class="time">11:00am</p>
+                </div> 
+
+                <!-- choice box -->
+                <div class="text_message choice_box delay_15s" id="choice_box2">
+                    <div class="choice">
+                        <a href="#gentle" class="toggle2">Gentle</a>
+                    </div>
+                    <div class="choice">
+                        <a href="#alarmed" class="toggle2">Alarmed</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="toggle-content appear" id="gentle">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Oh Amani… Positive means you have HIV. 😔</p>
+                    <p class="time">11:01am</p>
+                </div> 
+                <div class="text_message player_box delay_3s">
+                    <p>I’m on my way to your place…  I shouldn’t have rejected you when you were about to… you know… </p>
+                    <p class="time">11:01am</p>
+                </div> 
+                <div class="text_message player_box delay_5s">
+                    <p>Don’t panic. We’ll deal with this together.</p>
+                    <p class="time">11:01am</p>
+                </div> 
+            </div>
+            <div class="toggle-content appear" id="alarmed">
+                <div class="text_message player_box delay_0_5s">
+                    <p>No! Positive is NOT a good thing!!! 😱</p>
+                    <p class="time">11:01am</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>I’ll be there in 5 minutes.</p>
+                    <p class="time">11:01am</p>
+                </div> 
+                <div class="text_message player_box delay_4s">
+                    <p>Wait for me.</p>
+                    <p class="time">11:01am</p>
+                </div> 
+            </div>
+
+            <div class="next appear" id="next2">
+                <!-- amani box -->    
+               <div class="text_message amani_box delay_8s">
+                   <p>I feel like my life is over… </p>
+                   <p class="time">11:02am</p>
+               </div> 
+               <div class="text_message amani_box delay_12s">
+                    <p>I don’t know what I am going to tell my parents. They are going to start to get suspicious. 😔😔😔</p>
+                    <p class="time">11:02am</p>
+                </div> 
+                <div class="text_message amani_box delay_16s">
+                    <p>Now I guess I finally got what I wanted. I am an adult. Not because I had sex, but because I have a load of responsabilities to deal with now. </p>
+                    <p class="time">11:02am</p>
+                </div> 
+                <div class="text_message amani_box delay_19s">
+                    <p>Congratulations to me. I ruined my life.😩</p>
+                    <p class="time">11:03am</p>
+                </div> 
+                <!-- player box -->    
+                <div class="text_message player_box delay_23s">
+                    <p>Don’t worry girl, I won’t let you down this time. We’ll be in this together.💪🏾</p>
+                    <p class="time">11:03am</p>
+                </div> 
+                <div class="text_message player_box delay_26s">
+                    <p>We don’t have to tell your parents. I’ll help you cover anytime you need to go to the hospital.🧡</p>
+                    <p class="time">11:03am</p>
+                </div>
+                <div class="text_message player_box delay_30s">
+                    <p>There’s medication for HIV, your life is NOT over, you’ll just have to follow the treatment as good as you can, and everything will be fine.</p>
+                    <p class="time">11:03am</p>
+                </div>
+
+                <!-- amani box -->    
+                <div class="text_message amani_box delay_33s">
+                    <p>It says here that I’ll have to take some pills and go to the hospital regularly. ☹️ </p>
+                    <p class="time">11:04am</p>
+                </div> 
+
+                <!-- player box -->    
+                <div class="text_message player_box delay_37s">
+                    <p>Don’t worry, we’ll make it fun together! I’ll help you take all of your pills, let's catch'em all!
+                    </p>
+                    <p class="time">11:05am</p>
+                </div> 
+
+                <!-- choice box -->
+                <div class="text_message play_box3 delay_38s">
+                    <div class="choice">
+                        <a href="pill4u/game/index.html">Play Pill4U</a>
+                    </div>
+                    <div class="choice">
+                        <a href="part4.html">Skip</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

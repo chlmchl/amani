@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="interactive, narration, HIV, prevention, UNAIDS">
+    <meta name="description" content="An HIV prevention interactive narration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amani, my friend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appear.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="header_content">
+               <div><img src="img/signal.svg"/> 4G</div> <p>11:01</p><img src="img/battery.svg"/>
+            </div>
+            <div class="header_content">
+                <img s/><h1>AMANI BFF 💛️</h1><img/>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- amani box -->
+            <div class="text_message amani_box delay_1s">
+                <p>Oh my... what did I do???</p>
+                <p class="time">07:44am</p>
+            </div>
+            <div class="text_message amani_box delay_3s">
+                <p>I can’t be pregnant!</p>
+                <p class="time">07:44am</p>
+            </div>
+            <div class="text_message amani_box delay_4s">
+                <p>Or sick!</p>
+                <p class="time">07:44am</p>
+            </div>
+            <div class="text_message amani_box delay_6s">
+                <p>My parents would kill me! 😭😭 </p>
+                <p class="time">07:44am</p>
+            </div>
+
+            <!-- choice box -->
+            <div class="text_message choice_box delay_7s" id="choice_box1">
+                <div class="choice">
+                    <a href="#reassuring" class="toggle">Reassuring</a>
+                </div>
+                <div class="choice">
+                    <a href="#alarming" class="toggle">Alarming</a>
+                </div>
+            </div>
+
+            <!-- player box -->
+            <div class="toggle-content appear" id="reassuring">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Stay calm, nothing is sure yet.</p>
+                    <p class="time">07:45am</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>Let me take you to the hospital to get tested, ok? We’ll do this together.🧡</p>
+                    <p class="time">07:45am</p>
+                </div> 
+             </div>
+
+             <!-- player box -->
+            <div class="toggle-content appear" id="alarming">
+                <div class="text_message player_box delay_0_5s">
+                    <p>Shit</p>
+                    <p class="time">07:45am</p>
+                </div> 
+                <div class="text_message player_box delay_2s">
+                    <p>We should go to the hospital right now for you to get tested.🧡</p>
+                    <p class="time">07:45am</p>
+                </div> 
+             </div>
+
+             <div class="next appear" id="next1">
+                <div class="text_message player_box delay_5s">
+                    <p>I know one trustworthy facility that is called Family Options Kenya</p>
+                    <p class="time">07:45am</p>
+                </div> 
+
+                <!-- amani box -->
+                <div class="text_message amani_box delay_8s">
+                    <p>I don’t know sis, I’m too worried that somebody sees us going there… 😣</p>
+                    <p class="time">07:46am</p>
+                </div> 
+
+                <!-- player box -->
+                <div class="text_message player_box delay_10s">
+                    <p>Don’t worry.</p>
+                    <p class="time">07:46am</p>
+                </div> 
+                <div class="text_message player_box delay_12s">
+                    <p>We will avoid them together!</p>
+                    <p class="time">07:46am</p>
+                </div> 
+                <div class="text_message player_box delay_15s">
+                    <p>Even if it means taking the long way there.</p>
+                    <p class="time">07:46am</p>
+                </div> 
+                <div class="text_message player_box delay_17s">
+                    <p>We just have to be extra alert. 💪🏾</p>
+                    <p class="time">07:46am</p>
+                </div> 
+
+                <!-- choice box -->
+                <div class="text_message play_box2 delay_18s">
+                    <div class="choice">
+                        <a href="medquest/index.html">Play MedQuest</a>
+                    </div>
+                    <div class="choice">
+                        <a href="part3.html">Skip</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

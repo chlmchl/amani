@@ -1,0 +1,280 @@
+/* color variables */
+
+:root {
+    --darkerblue: #004F7C;
+    --darkblue: #056399;
+    --blue: #5DB4E7;
+    --lightblue: #C3ECFF;
+    --white: #ffffff;
+
+  }
+
+/* main specs */
+
+* {
+    text-decoration: none;
+}
+
+a {
+    color: var(--darkblue);
+}
+
+body {
+    background-color: var(--blue);
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+
+    font-family: "VT323", monospace;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100.5vw;
+    z-index: 1;
+}
+
+header img {
+    height: 55%;
+    margin: 10px;
+}
+
+    div.header_content {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.header_content div {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+
+        div.header_content:nth-child(1) {
+            background-color: var(--darkerblue);
+            width: 100%;
+            
+            height: 30px;
+            margin:0;
+            color: white;
+            font-size: 18px;
+            align-self: center;
+            padding-bottom: 5px;;
+        }
+
+        div.header_content:nth-child(2) {
+            background-color: var(--darkblue);
+            width: 100%;
+            height: 8vh;
+            margin-top: -4px;
+        }
+
+            header h1 {
+                text-align: center;
+                color: var(--white);
+            }
+
+.container{
+    margin-top: 11.1vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+.choice_box {
+    margin: auto;
+    margin-top: 4vh;
+}
+
+.next, .toggle-content {
+    flex-direction: column;
+}
+
+
+/* Text messages */
+
+    /* box design */
+
+.text_message {
+    min-width: 35vw;
+    max-width: 60vw;
+    margin-top: 4vh;
+    
+}
+    .player_box {
+        background: var(--lightblue);
+        align-self: flex-end;
+        margin-right: 5vw;
+        color: var(--darkerblue);
+        box-shadow:  8px 0 var(--lightblue), -8px 0 var(--lightblue), 0 -8px var(--lightblue), 0 8px var(--lightblue), 0 0 0 4px var(--lightblue);
+    }
+
+    .amani_box {
+        background: var(--white);
+        align-self: flex-start;
+        margin-left: 5vw;
+        color: var(--darkerblue);
+        box-shadow:  8px 0 var(--white), -8px 0 var(--white), 0 -8px var(--white), 0 8px var(--white), 0 0 0 4px var(--white);
+    }
+
+    .choice_box, .play_box1, .play_box2, .play_box3 {
+        
+        background: var(--white);
+        align-self: center;
+        width: 100vw;
+        height: 15vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;    
+        box-shadow:  8px 0 var(--white), -8px 0 var(--white), 0 -8px var(--white), 0 8px var(--white), 0 0 0 4px var(--white);
+    }
+
+    .narrator_box {
+        align-self: center;
+        text-align: center;
+        font-style: italic;
+        color: var(--lightblue);
+    }
+
+.text_message p {
+    font-size: 20px;  
+    margin: 5px 5px 5px 5px;
+    line-height: 1.2em;
+}
+
+.text_message p.time {
+    font-size: 16px; 
+    line-height: 0.1em;
+    margin-top: 10px;
+    margin-right: 10px;
+    opacity: 0.3; 
+    color: var(--darkblue);
+}
+
+    .player_box p.time {
+        text-align: right;
+    }
+    .amani_box p.time {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+.text_final {
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    padding: 10px;
+    color: var(--darkerblue);
+    background-color: var(--white);
+    box-shadow:  8px 0 var(--white), -8px 0 var(--white), 0 -8px var(--white), 0 8px var(--white), 0 0 0 4px var(--white);
+}
+    .text_final h1 {
+        font-size: 30px;  
+        margin: 5px 5px 5px 5px;
+        line-height: 1.2em;
+        color: var(--blue);
+        text-align: center;
+    }
+    .text_final p {
+        font-size: 20px;  
+        margin: 5px 5px 5px 5px;
+        line-height: 1.2em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .text_final h2 {
+        font-size: 18px; 
+        font-style: italic;
+        opacity: 0.6;
+        margin: 5px 5px 5px 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        line-height: 1.2em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .text_final .startover {
+        color: var(--white);
+        width: 100%;
+        height: 5vh;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--darkerblue);
+        box-shadow:  8px 0 var(--darkerblue), -8px 0 var(--darkerblue), 0 -8px var(--darkerblue), 0 8px var(--darkerblue), 0 0 0 4px var(--darkerblue);
+        text-transform: uppercase;
+    }
+
+
+
+
+.choice_box .choice {
+    color: var(--darkerblue);
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    box-shadow:  8px 0 var(--lightblue), -8px 0 var(--lightblue), 0 -8px var(--lightblue), 0 8px var(--lightblue), 0 0 0 4px var(--lightblue);
+
+    text-transform: uppercase;
+}
+
+.play_box1 .choice:first-child a, .play_box2 .choice:first-child a, .play_box3 .choice:first-child a {
+    color: var(--white);
+}
+.play_box1 .choice, .play_box2 .choice, .play_box3 .choice {
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.play_box1 .choice:first-child {
+    background-color: rgb(254, 101, 209);
+    box-shadow:  8px 0 rgb(254, 101, 209), -8px 0 rgb(254, 101, 209), 0 -8px rgb(254, 101, 209), 0 8px rgb(254, 101, 209), 0 0 0 4px rgb(254, 101, 209);
+}
+
+.play_box2 .choice:first-child {
+    background-color: #f47160;
+    box-shadow:  8px 0 #f47160, -8px 0 #f47160, 0 -8px #f47160, 0 8px #f47160, 0 0 0 4px #f47160;
+}
+
+.play_box3 .choice:first-child {
+    background-color: var(--blue);
+    box-shadow:  8px 0 var(--blue), -8px 0 var(--blue), 0 -8px var(--blue), 0 8px var(--blue), 0 0 0 4px var(--blue);
+}
+
+.play_box1 .choice:last-child, .play_box2 .choice:last-child, .play_box3 .choice:last-child {
+    background-color: var(--lightblue);
+    box-shadow:  8px 0 var(--lightblue), -8px 0 var(--lightblue), 0 -8px var(--lightblue), 0 8px var(--lightblue), 0 0 0 4px var(--lightblue);
+}
+
+.appear {
+    display: none;
+}
+
+.faded {
+    opacity: 0.4;
+}
+
